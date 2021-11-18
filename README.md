@@ -1,13 +1,13 @@
 # Multi-Objective Extreme Solutions
  
-### This project is used for Ph.D. research in the area of multi-objective optimization.
+### This project is used for Ph.D. research in the area of the multi-objective optimization.
 
 
-1. Wangsom, P., Lavangnananda, K., and Bouvry, P., 2019, [ìMulti-Objective Scientific-Workflow Scheduling with Data Movement Awareness in Cloudî](https://ieeexplore.ieee.org/document/8924641), IEEE Access, Vol. 7, No., pp. 177063-177081.
+1. Wangsom, P., Lavangnananda, K., and Bouvry, P., 2019, [‚ÄúMulti-Objective Scientific-Workflow Scheduling with Data Movement Awareness in Cloud‚Äù](https://ieeexplore.ieee.org/document/8924641), IEEE Access, Vol. 7, No., pp. 177063-177081.
 <br/><br/>
-2. Wangsom, P., and Lavangnananda, K., 2019, *ìExtreme Solutions NSGA-III (E-NSGA-III) for Multi-Objective Constrained Problemsî*, OLA'2019 International Conference on Optimization and Learning, 29-31 Jan. 2019.
+2. Wangsom, P., and Lavangnananda, K., 2019, *‚ÄúExtreme Solutions NSGA-III (E-NSGA-III) for Multi-Objective Constrained Problems‚Äù*, OLA'2019 International Conference on Optimization and Learning, 29-31 Jan. 2019.
 <br/><br/>
-3. Wangsom, P., Lavangnananda, K., and Bouvry, P., 2019, [ìMulti-Objective Scheduling for Scientific Workflows on Cloud with Peer-to-Peer Clusteringî](https://ieeexplore.ieee.org/document/8687412), the 2019 11th International Conference on Knowledge and Smart Technology (KST), 23-26 Jan. 2019, pp. 175-180.
+3. Wangsom, P., Lavangnananda, K., and Bouvry, P., 2019, [‚ÄúMulti-Objective Scheduling for Scientific Workflows on Cloud with Peer-to-Peer Clustering‚Äù](https://ieeexplore.ieee.org/document/8687412), the 2019 11th International Conference on Knowledge and Smart Technology (KST), 23-26 Jan. 2019, pp. 175-180.
 <br/><br/>
-4. Lavangnananda, K., Wangsom, P., and Bouvry, P., 2018, [ìExtreme Solutions NSGA-III (E-NSGA-III) for Scientific Workflow Scheduling on Cloudî](https://ieeexplore.ieee.org/document/8614209), the 2018 17th IEEE International Conference on Machine Learning and Applications (ICMLA), 17-20 Dec. 2018, pp. 1139-1146.
+4. Lavangnananda, K., Wangsom, P., and Bouvry, P., 2018, [‚ÄúExtreme Solutions NSGA-III (E-NSGA-III) for Scientific Workflow Scheduling on Cloud‚Äù](https://ieeexplore.ieee.org/document/8614209), the 2018 17th IEEE International Conference on Machine Learning and Applications (ICMLA), 17-20 Dec. 2018, pp. 1139-1146.
 <br/><br/>
