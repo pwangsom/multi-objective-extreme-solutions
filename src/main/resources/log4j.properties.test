@@ -1,0 +1,52 @@
+# Root logger option
+log4j.log=./log
+log4j.logkey=YYMMDDHHMMSS
+log4j.filename=da-dag-nsgaiii
+log4j.current.date.time=yyyyMMdd_hhmmss
+log4j.rootLogger=DEBUG, stdout
+
+# Package com.dag.da.mop.manager Manager
+log4j.manager.filename=da-dag-mop-manager
+log4j.manager.current.date.time=yyyyMMdd_hhmmss
+log4j.logger.com.dag.da.mop.manager=DEBUG, manager
+log4j.logger.com.dag.da.mop.pareto=DEBUG, manager
+log4j.logger.com.dag.da.mop.output=DEBUG, manager
+log4j.logger.com.dag.da.pegasus=DEBUG, manager
+log4j.logger.com.dag.da.workflow=DEBUG, runner
+
+# Package com.dag.da.mop.runner Runner
+log4j.runner.filename=da-dag-mop-runner
+log4j.runner.current.date.time=yyyyMMdd_hhmmss
+log4j.logger.com.dag.da.mop.runner=DEBUG, runner
+log4j.logger.com.dag.da.mop.problem=DEBUG, runner
+log4j.logger.com.dag.da.mop.algorithm=DEBUG, runner
+
+# Redirect log messages to console
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+# Direct log messages to file
+log4j.appender.fileout=org.apache.log4j.FileAppender
+log4j.appender.fileout.File=${log4j.log}/${log4j.logkey}/${log4j.filename}_${log4j.current.date.time}.log
+log4j.appender.fileout.ImmediateFlush=true
+log4j.appender.fileout.Append=true
+log4j.appender.fileout.layout=org.apache.log4j.PatternLayout
+log4j.appender.fileout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+# Direct the manager logger to file
+log4j.appender.manager=org.apache.log4j.FileAppender
+log4j.appender.manager.File=${log4j.log}/${log4j.logkey}/${log4j.manager.filename}_${log4j.manager.current.date.time}.log
+log4j.appender.manager.ImmediateFlush=true
+log4j.appender.manager.Append=true
+log4j.appender.manager.layout=org.apache.log4j.PatternLayout
+log4j.appender.manager.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+# Direct the runner logger to file
+log4j.appender.runner=org.apache.log4j.FileAppender
+log4j.appender.runner.File=${log4j.log}/${log4j.logkey}/${log4j.runner.filename}_${log4j.runner.current.date.time}.log
+log4j.appender.runner.ImmediateFlush=true
+log4j.appender.runner.Append=true
+log4j.appender.runner.layout=org.apache.log4j.PatternLayout
+log4j.appender.runner.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n

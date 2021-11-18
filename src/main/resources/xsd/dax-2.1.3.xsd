@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com)-->
+<xs:schema targetNamespace="http://pegasus.isi.edu/schema/DAX" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://pegasus.isi.edu/schema/DAX" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1">
+<!-- <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pegasus.isi.edu/schema/DAX" xmlns:xs="http://www.w3.org/2001/XMLSchema"> -->
+	<xs:simpleType name="TransferType">
+		<xs:annotation>
+			<xs:documentation>defines the tri-state transfer modes.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="false"/>
+			<xs:enumeration value="optional"/>
+			<xs:enumeration value="true"/>
+		</xs:restriction>
+	</xs:simpleType>	
+    <xs:simpleType name="FileType">
+		<xs:annotation>
+			<xs:documentation>defines the type of files data|executable|pattern</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="data"/>
+			<xs:enumeration value="executable"/>
+			<xs:enumeration value="pattern"/>
+		</xs:restriction>
+	</xs:simpleType>
+    <xs:simpleType name="LinkageType">
+		<xs:annotation>
+			<xs:documentation>defines the usage of a logical filename.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="none"/>
+			<xs:enumeration value="input"/>
+			<xs:enumeration value="output"/>
+			<xs:enumeration value="inout"/>
+		</xs:restriction>
+	</xs:simpleType>
+    <xs:element name="adag">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="job" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="uses" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="file" type="xs:string" use="optional" />
+                                    <xs:attribute name="link" type="LinkageType" use="optional" />
+                                    <xs:attribute name="register" type="xs:boolean" use="optional" />
+                                    <xs:attribute name="transfer" type="TransferType" use="optional" default="true" />
+                                    <xs:attribute name="optional" type="xs:boolean" use="optional" />
+                                    <xs:attribute name="type" type="FileType" use="optional" default="data" />
+                                    <xs:attribute name="size" type="xs:unsignedLong" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:ID" use="required" />
+                        <xs:attribute name="namespace" type="xs:string" use="optional" />
+                        <xs:attribute name="name" type="xs:string" use="optional" />
+                        <xs:attribute name="version" type="xs:decimal" use="optional" />
+                        <xs:attribute name="runtime" type="xs:decimal" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="child" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="parent" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="ref" type="xs:IDREF" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ref" type="xs:IDREF" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" type="xs:decimal" use="optional" />
+            <xs:attribute name="count" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="index" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="name" type="xs:string" use="optional" />
+            <xs:attribute name="jobCount" type="xs:unsignedShort" use="optional" />
+            <xs:attribute name="fileCount" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="childCount" type="xs:unsignedShort" use="optional" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

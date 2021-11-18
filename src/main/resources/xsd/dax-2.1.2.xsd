@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pegasus.isi.edu/schema/DAX" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="adag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="job">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="uses">
+                <xs:complexType>
+                  <xs:attribute name="file" type="xs:string" use="optional" />
+                  <xs:attribute name="link" type="xs:string" use="optional" />
+                  <xs:attribute name="register" type="xs:boolean" use="optional" />
+                  <xs:attribute name="transfer" type="xs:boolean" use="optional" />
+                  <xs:attribute name="optional" type="xs:boolean" use="optional" />
+                  <xs:attribute name="type" type="xs:string" use="optional" />
+                  <xs:attribute name="size" type="xs:unsignedLong" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="optional" />
+            <xs:attribute name="namespace" type="xs:string" use="optional" />
+            <xs:attribute name="name" type="xs:string" use="optional" />
+            <xs:attribute name="version" type="xs:decimal" use="optional" />
+            <xs:attribute name="runtime" type="xs:decimal" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="child">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="parent">
+                <xs:complexType>
+                  <xs:attribute name="ref" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ref" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:decimal" use="optional" />
+      <xs:attribute name="count" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="index" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="name" type="xs:string" use="optional" />
+      <xs:attribute name="jobCount" type="xs:unsignedShort" use="optional" />
+      <xs:attribute name="fileCount" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="childCount" type="xs:unsignedShort" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

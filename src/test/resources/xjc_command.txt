@@ -1,0 +1,8 @@
+xjc -d src -p blog.thoughts.on.java schema.xsd
+
+xjc.bat -p com.cat.udb.om.css.xsd.element "D:\Users-Profiles\Peerasak\udb-css-interface-project\OMCSSSchema\schema\om_css_schema.xsd"
+
+# in the java home directory: C:\Program Files\Java\jdk-9.0.1\bin
+xjc.exe -d "D:\Users-Profiles\Peerasak\git\daDAG\src\main\java" -p com.dag.da.xsd.v21.element "D:\Users-Profiles\Peerasak\git\daDAG\src\main\resources\xsd\dax-2.1.xsd"
+
+xjc.exe -d "D:\Users-Profiles\Peerasak\git\daDAG\src\main\java" -p com.dag.da.xsd.v34.element "D:\Users-Profiles\Peerasak\git\daDAG\src\main\resources\xsd\dax-3.4.xsd" 

@@ -1,0 +1,68 @@
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:364 - ======================Scheduling Plan====================
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:365 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - {  5} -> [   ID00000,    ID00002,    ID00012,    ID00022,    ID00032,    ID00042,    ID00044,    ID00045,    ID00046]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [      0.00,      44.45,      49.93,      51.16,      54.53,    5773.59,    7647.33,    8199.14,    8199.24]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [     44.45,      49.93,      51.16,      54.53,    4615.09,    6152.78,    8199.14,    8199.24,    9833.20]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [      0.00,       0.00,       0.00,       0.00,       0.00,     366.07,     526.29,       0.00,       0.00]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [       0|0,        0|1,        0|1,        0|1,        0|1,        4|5,        1|2,        0|1,        0|1]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 11} -> [   ID00001,    ID00007,    ID00017,    ID00027,    ID00037,    ID00043,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [      0.00,      28.30,      39.47,      41.71,      44.71,    7162.46,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [     28.30,      39.47,      41.71,      44.71,    2745.78,    7647.33,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [      0.00,       0.00,       0.00,       0.00,       0.00,     469.85,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [       0|0,        0|1,        0|1,        0|1,        0|1,        4|5,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 17} -> [         -,    ID00003,    ID00013,    ID00023,    ID00033,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      44.45,    1023.90,    1025.35,    1027.89,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,    1023.90,    1025.35,    1027.89,    5516.36,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,     968.27,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 23} -> [         -,    ID00004,    ID00014,    ID00024,    ID00034,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      44.45,     856.63,     858.52,     862.09,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,     856.63,     858.52,     862.09,    4592.82,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,     803.05,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 29} -> [         -,    ID00005,    ID00015,    ID00025,    ID00035,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      44.45,    1068.02,    1069.73,    1072.83,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,    1068.02,    1069.73,    1072.83,    5773.59,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,    1017.75,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 35} -> [         -,    ID00006,    ID00016,    ID00026,    ID00036,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      44.45,     809.64,     811.22,     814.39,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,     809.64,     811.22,     814.39,    5084.05,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,     760.97,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 41} -> [         -,    ID00008,    ID00018,    ID00028,    ID00038,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      28.30,    1032.35,    1034.94,    1037.39,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,    1032.35,    1034.94,    1037.39,    4817.56,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,     995.38,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 47} -> [         -,    ID00009,    ID00019,    ID00029,    ID00039,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      28.30,     948.30,     950.70,     953.06,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,     948.30,     950.70,     953.06,    3275.40,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,     911.28,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 53} -> [         -,    ID00010,    ID00020,    ID00030,    ID00040,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      28.30,    1148.17,    1149.85,    1155.08,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,    1148.17,    1149.85,    1155.08,    7162.46,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,    1108.78,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:428 - { 59} -> [         -,    ID00011,    ID00021,    ID00031,    ID00041,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:429 -          [         -,      28.30,     919.83,     921.65,     927.16,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:430 -          [         -,     919.83,     921.65,     927.16,    3873.32,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:431 -          [         -,     885.85,       0.00,       0.00,       0.00,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:432 -          [         -,        1|1,        0|1,        0|1,        0|1,          -,          -,          -,          -]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:434 - 
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:341 - Solution variables -> [5, 11, 17, 23, 29, 35, 41, 47, 53, 59]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:342 - VM ID list -> [5, 11, 17, 23, 29, 35, 41, 47, 53, 59]
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:343 - No of VMs -> 10
+2018-12-21 16:15:35 DEBUG DagWorkflowPlanner:344 - 
+2018-12-21 16:15:35 DEBUG DagSchedulingIntegerProblem:72 - [Cost: 21.0000, Makespan: 9833.2007, NoOfCommu: 17]
+2018-12-21 16:15:35 DEBUG DagSchedulingIntegerProblem:78 - Plan Performanace -> [NoOfVm: 10, Cost: 21.0000, Makespan: 9833.2007, IdleTime: 25384.6342, IdleRatio: 0.3057, IdleCost: 3.0567, CommuTime: 8813.5358, RemoteComTask: 17, TotalComTask: 54]

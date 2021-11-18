@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Wed Mar 07 2018 17:03:11 GMT+0700 (SE Asia Standard Time) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="adag">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="job" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="uses" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="file" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="link" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="register" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="transfer" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="optional" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="size" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="namespace" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="version" type="xs:int"></xs:attribute>
+                                       <xs:attribute name="runtime" type="xs:double"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="child" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="parent" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="ref" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="ref" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+                     <xs:attribute name="xmlns" type="xs:string"></xs:attribute>
+                     <xs:attribute name="xmlns:xsi" type="xs:string"></xs:attribute>
+                     <xs:attribute name="xsi:schemaLocation" type="xs:string"></xs:attribute>
+                     <xs:attribute name="version" type="xs:double"></xs:attribute>
+                     <xs:attribute name="count" type="xs:int"></xs:attribute>
+                     <xs:attribute name="index" type="xs:int"></xs:attribute>
+                     <xs:attribute name="name" type="xs:string"></xs:attribute>
+                     <xs:attribute name="jobCount" type="xs:int"></xs:attribute>
+                     <xs:attribute name="fileCount" type="xs:int"></xs:attribute>
+                     <xs:attribute name="childCount" type="xs:int"></xs:attribute>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
